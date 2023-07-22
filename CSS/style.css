@@ -1,0 +1,423 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+nav
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px; 
+    
+}
+nav .logo 
+{
+    width: 4%;
+    margin-right: 100px;
+}
+
+nav .logo img 
+{
+    width: 100%;
+}
+nav .menu 
+{
+width: 35px;
+height: 2px;
+background-color: #000;
+margin-bottom: 9px ;
+position: relative;
+margin-left: 100px;
+}       
+
+nav .menu::after
+{
+    content: "";
+    background-color: #000;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    transition: width 0.3s;
+    
+}
+nav .menu::before
+{
+    content: "";
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    
+}
+nav .menu:hover::after
+{
+    width: 100%;
+} 
+.home
+{
+    background-image: url(../Images/landing.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.home header h1 
+{
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 3.625rem;
+    color: #10cab7;
+}
+.home header p 
+{
+    font-size: 1.187rem;
+    color: #000;
+    margin: 10px;
+}
+.items
+{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+}
+.items .item 
+{
+    text-align: center;
+    width: 33.3333%;
+    padding: 40px;
+}
+.items .item i 
+{
+    color: #10cab7;
+    font-size: 3rem;
+    padding: 15px;
+    font-weight: 900;
+}
+.items .item h4 
+{
+    font-size: 1.18rem;
+    font-weight: 800;
+    padding: 15px;
+}
+.items .item p
+{
+    font-size: 1.06rem;
+    font-weight: 400;
+    padding: 20px;
+    color: #777;
+}
+.services
+{
+    padding: 100px;
+    /* background-color: #09c;  */
+}
+.services .caption 
+{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+}
+.services .caption h3
+{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #797979;
+}
+.services .caption::before
+{
+    content: "Services";
+    font-weight: 800;
+    font-size: 6.25rem;
+    color: #ebeced;
+    position: absolute;
+    top: -45%;
+    z-index: -1;
+}
+.services .content
+{
+    padding: 100px;
+    display: flex;
+}
+
+.services .content .left
+{
+    width: 66.7777%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.services .content .left .item-left
+{
+    display: flex;
+    width: 50%;
+    padding-bottom:10px;
+    
+    
+}
+.services .content .left .item-left .first-corner 
+{
+    padding: 10px;
+}
+.services .content .left .item-left .first-corner i 
+{
+    font-size: 2rem;
+    color: #10cab7;
+}
+.services .content .left .item-left .second-corner
+{
+    padding: 10px;
+} 
+.services .content .left .item-left .second-corner h5
+{
+font-size: 1.19rem;
+font-weight: 700;
+padding-bottom: 10px;
+}
+.services .content .left .item-left .second-corner p
+{
+font-size: 1rem;
+color: #444;
+padding-top: 10px;
+line-height: 26px;
+font-weight: 300;
+}
+.services .content .right
+{
+    width: 33.3333%;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+.services .content .right img 
+{
+    width: 100%;
+}
+.services .content .right::after
+{
+    content: "";
+    background-color: #2c4755;
+    width: 27%;
+    height: 100%;
+    position: absolute;
+    top:-10px;
+    right:  5px;
+    z-index: -8;
+
+}
+.port
+{
+    padding: 100px;
+    background-color: #f6f6f6;
+}
+.port .caption 
+{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+}
+.port .caption h3
+{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #797979;
+}
+.port .caption::before
+{
+    content: "Portfolio";
+    font-weight: 800;
+    font-size: 6.25rem;
+    color: #ebeced;
+    position: absolute;
+    top: -45%;
+    z-index: -1;
+}
+.port .cards 
+{
+
+padding: 40px;
+display: flex;
+background-color: #f6f6f6;
+}
+.port .cards .card
+{
+    background-color: #fff;
+    width: 33.3333333%;
+    margin: 10px;
+}
+.port .cards .card img 
+{
+    width: 100%;
+}
+.port .cards .card h5 
+{
+padding: 15px;
+font-size: 1.118rem;
+font-weight: 700;
+}
+.port .cards .card p
+{
+padding: 15px;
+font-weight: 400;
+font-size: 1rem;
+color: #777;
+}
+
+.about
+{
+    padding: 100px;
+}
+.about .caption 
+{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+}
+.about .caption h3
+{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #797979;
+}
+.about .caption::before
+{
+    content: "About";
+    font-weight: 800;
+    font-size: 6.25rem;
+    color: #ebeced;
+    position: absolute;
+    top: -45%;
+    z-index: -1;
+}
+.about .cont 
+{
+    display: flex;
+}
+.about .cont .left
+{
+    width: 33.3333%;
+    padding: 70px;
+    position: relative;
+    z-index: 1;
+}
+.about .cont .left img 
+{
+    width: 80%;
+}
+.about .cont .left::after
+{
+    content: "";
+    background-color: #ebeced;
+    width: 23%;
+    height: 90%;
+    position: absolute;
+    top:25px;
+    left: 50px;
+    z-index: -8;
+    
+
+}
+.about .cont .left .corner 
+{
+    width: 80px;
+    height: 370px;
+    background-color: #10cab7;
+    position: absolute;
+    right: 80px;
+    top: 25px;
+    z-index: -89;
+}
+.about .cont .left .corner::after 
+{
+    content: "";
+    background-color: #10cab7;
+    width: 170px;
+    height: 75px;
+    position: absolute;
+    bottom: 0px;
+}
+.about .cont .right
+{
+width: 66.7777777%;
+padding: 100px;
+}
+.about .cont .right .p1 
+{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2rem;
+    position: relative;
+    margin-bottom: 60px;
+}
+.about .cont .right .p1::after 
+{
+    content: "";
+    background-color: #10cab7;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+}
+.about .cont .right .p2
+{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #777;
+    margin-top: 60px;
+}
+.contact
+{
+    padding: 100px;
+    background-color: #f6f6f6;
+}
+.contact .caption 
+{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+}
+.contact .caption h3
+{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #797979;
+}
+.contact .caption::before
+{
+    content: "Contact";
+    font-weight: 800;
+    font-size: 6.25rem;
+    color: #ebeced;
+    position: absolute;
+    top: -45%;
+    z-index: -1;
+}
+.contact i 
+{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px;
+}
